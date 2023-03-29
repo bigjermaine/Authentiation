@@ -13,9 +13,10 @@
 		18B8B24729D4AE8600EEA541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B8B24529D4AE8600EEA541 /* Main.storyboard */; };
 		18B8B24929D4AE8B00EEA541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B8B24829D4AE8B00EEA541 /* Assets.xcassets */; };
 		18B8B24C29D4AE8B00EEA541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B8B24A29D4AE8B00EEA541 /* LaunchScreen.storyboard */; };
-		18B8B25729D4AE8B00EEA541 /* AuthentiationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B25629D4AE8B00EEA541 /* AuthentiationTests.swift */; };
-		18B8B26129D4AE8B00EEA541 /* AuthentiationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B26029D4AE8B00EEA541 /* AuthentiationUITests.swift */; };
-		18B8B26329D4AE8C00EEA541 /* AuthentiationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B26229D4AE8C00EEA541 /* AuthentiationUITestsLaunchTests.swift */; };
+		18B8B27129D4B0D600EEA541 /* Authetication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B27029D4B0D600EEA541 /* Authetication.swift */; };
+		18B8B27329D4B1D800EEA541 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B27229D4B1D800EEA541 /* Extension.swift */; };
+		18B8B27629D4C3B900EEA541 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B27529D4C3B900EEA541 /* HomeViewController.swift */; };
+		18B8B27829D4CD8F00EEA541 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8B27729D4CD8F00EEA541 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +46,11 @@
 		18B8B24B29D4AE8B00EEA541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B8B24D29D4AE8B00EEA541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B8B25229D4AE8B00EEA541 /* AuthentiationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthentiationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B8B25629D4AE8B00EEA541 /* AuthentiationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentiationTests.swift; sourceTree = "<group>"; };
 		18B8B25C29D4AE8B00EEA541 /* AuthentiationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthentiationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B8B26029D4AE8B00EEA541 /* AuthentiationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentiationUITests.swift; sourceTree = "<group>"; };
-		18B8B26229D4AE8C00EEA541 /* AuthentiationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentiationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18B8B27029D4B0D600EEA541 /* Authetication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authetication.swift; sourceTree = "<group>"; };
+		18B8B27229D4B1D800EEA541 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		18B8B27529D4C3B900EEA541 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18B8B27729D4CD8F00EEA541 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				18B8B23E29D4AE8600EEA541 /* Authentiation */,
-				18B8B25529D4AE8B00EEA541 /* AuthentiationTests */,
-				18B8B25F29D4AE8B00EEA541 /* AuthentiationUITests */,
 				18B8B23D29D4AE8600EEA541 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +99,9 @@
 		18B8B23E29D4AE8600EEA541 /* Authentiation */ = {
 			isa = PBXGroup;
 			children = (
+				18B8B26F29D4B0B000EEA541 /* Authentication */,
 				18B8B23F29D4AE8600EEA541 /* AppDelegate.swift */,
+				18B8B27429D4C38400EEA541 /* Controller */,
 				18B8B24129D4AE8600EEA541 /* SceneDelegate.swift */,
 				18B8B24329D4AE8600EEA541 /* ViewController.swift */,
 				18B8B24529D4AE8600EEA541 /* Main.storyboard */,
@@ -110,21 +112,22 @@
 			path = Authentiation;
 			sourceTree = "<group>";
 		};
-		18B8B25529D4AE8B00EEA541 /* AuthentiationTests */ = {
+		18B8B26F29D4B0B000EEA541 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				18B8B25629D4AE8B00EEA541 /* AuthentiationTests.swift */,
+				18B8B27029D4B0D600EEA541 /* Authetication.swift */,
+				18B8B27229D4B1D800EEA541 /* Extension.swift */,
 			);
-			path = AuthentiationTests;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
-		18B8B25F29D4AE8B00EEA541 /* AuthentiationUITests */ = {
+		18B8B27429D4C38400EEA541 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18B8B26029D4AE8B00EEA541 /* AuthentiationUITests.swift */,
-				18B8B26229D4AE8C00EEA541 /* AuthentiationUITestsLaunchTests.swift */,
+				18B8B27529D4C3B900EEA541 /* HomeViewController.swift */,
+				18B8B27729D4CD8F00EEA541 /* LoginViewController.swift */,
 			);
-			path = AuthentiationUITests;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B8B27829D4CD8F00EEA541 /* LoginViewController.swift in Sources */,
+				18B8B27329D4B1D800EEA541 /* Extension.swift in Sources */,
+				18B8B27129D4B0D600EEA541 /* Authetication.swift in Sources */,
 				18B8B24429D4AE8600EEA541 /* ViewController.swift in Sources */,
 				18B8B24029D4AE8600EEA541 /* AppDelegate.swift in Sources */,
 				18B8B24229D4AE8600EEA541 /* SceneDelegate.swift in Sources */,
+				18B8B27629D4C3B900EEA541 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B8B25729D4AE8B00EEA541 /* AuthentiationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B8B26329D4AE8C00EEA541 /* AuthentiationUITestsLaunchTests.swift in Sources */,
-				18B8B26129D4AE8B00EEA541 /* AuthentiationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +443,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Authentiation/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Applacation to Acess your Camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -466,6 +471,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Authentiation/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Applacation to Acess your Camera";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
